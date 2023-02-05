@@ -1,3 +1,8 @@
-node_modules/
-dist/
+/node_modules
+/build
 .parcel-cache
+.DS_Store 
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
