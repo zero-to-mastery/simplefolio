@@ -6,7 +6,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "gh-pages-build": "parcel build --public-url ."
   },
   "repository": {
     "type": "git",
