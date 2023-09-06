@@ -3,11 +3,13 @@
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "source": "src/index.html",
+  "source": "index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "gh-pages-build": "parcel build --public-url ."
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "gh-pages-build": "parcel build index.html --public-url ./",
+    "deploy": "npm run gh-pages-build && gh-pages -d dist",
+    "scss": "sass --watch styles.scss:dist/styles.css"
   },
   "repository": {
     "type": "git",
@@ -19,15 +21,16 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://github.com/AlfredoFerreiras/AlfredoFerreiras.github.io",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^6.0.0",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.3.1",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.7.3"
