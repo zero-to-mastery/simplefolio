@@ -29,7 +29,7 @@ jobs:
 
       # Build project
       - name: Build project
-        run: npm run-script build
+        run: npm run-script gh-pages-build
         
       # Push to Github Pages
       - name: Github Pages
